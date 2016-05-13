@@ -1,2 +1,20 @@
 ###Insturctions starting with a###
 ---------------------------------------
+a00-a21 ---> load integer to register 1
+a22-a43 ---> load integer to register 2
+a44-a65 ---> load integer to register 3
+a66 ---> load true bool register 1
+a67 ---> load true bool register 2
+a68 ---> load true bool register 3
+a69 ---> load false bool register 1
+a70 ---> load false bool register 2
+a71 ---> load false bool register 3
+a72 ---> load empty string register 1
+a73 ---> load empty string register 2
+a74 ---> load empty string register 3
+a75 ---> load null register 1
+a76 ---> load null register 2
+a77 ---> load null register 3
+a78 ---> load [] register 1
+a79 ---> load [] register 2
+a80 ---> load [] register 3

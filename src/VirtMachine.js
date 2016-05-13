@@ -210,6 +210,51 @@ var trigomatic = (function(){
         },
         "a65":function(mach){
             mach.registers.r3 = 1000000;
+        },
+        "a66":function(mach){
+            mach.registers.r1 = true;
+        },
+        "a67":function(mach){
+            mach.registers.r2 = true;
+        },
+        "a68":function(mach){
+            mach.registers.r3 = true;
+        },
+        "a69":function(mach){
+            mach.registers.r1 = false;
+        },
+        "a70":function(mach){
+            mach.registers.r2 = false;
+        },
+        "a71":function(mach){
+            mach.registers.r3 = false;
+        },
+        "a72":function(mach){
+            mach.registers.r1 = "";
+        },
+        "a73":function(mach){
+            mach.registers.r2 = "";
+        },
+        "a74":function(mach){
+            mach.registers.r3 = "";
+        },
+        "a75":function(mach){
+            mach.registers.r1 = null;
+        },
+        "a76":function(mach){
+            mach.registers.r2 = null;
+        },
+        "a77":function(mach){
+            mach.registers.r3 = null;
+        },
+        "a78":function(mach){
+            mach.registers.r1 = [];
+        },
+        "a79":function(mach){
+            mach.registers.r2 = [];
+        },
+        "a80":function(mach){
+            mach.registers.r3 = [];
         }
     };
     function trigomatic(){

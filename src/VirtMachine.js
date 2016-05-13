@@ -8,9 +8,74 @@ var trigomatic = (function(){
         this.r3 = null;
     };
     //private object the contains machine functions
+    //instruction codes range from a00 to Z99
     var ASM = {
-        "li":function(mach){
-
+        //load integers to register 1
+        "a00":function(mach){
+            mach.registers.r1 = 0;
+        },
+        "a01":function(mach){
+            mach.registers.r1 = 1;
+        },
+        "a02":function(mach){
+            mach.registers.r1 = 2;
+        },
+        "a03":function(mach){
+            mach.registers.r1 = 3;
+        },
+        "a04":function(mach){
+            mach.registers.r1 = 4;
+        },
+        "a05":function(mach){
+            mach.registers.r1 = 5;
+        },
+        "a06":function(mach){
+            mach.registers.r1 = 6;
+        },
+        "a07":function(mach){
+            mach.registers.r1 = 10;
+        },
+        "a08":function(mach){
+            mach.registers.r1 = 20;
+        },
+        "a09":function(mach){
+            mach.registers.r1 = 25;
+        },
+        "a10":function(mach){
+            mach.registers.r1 = 50;
+        },
+        "a11":function(mach){
+            mach.registers.r1 = 100;
+        },
+        "a12":function(mach){
+            mach.registers.r1 = 250;
+        },
+        "a13":function(mach){
+            mach.registers.r1 = 500;
+        },
+        "a14":function(mach){
+            mach.registers.r1 = 1000;
+        },
+        "a15":function(mach){
+            mach.registers.r1 = 2000;
+        },
+        "a16":function(mach){
+            mach.registers.r1 = 5000;
+        },
+        "a17":function(mach){
+            mach.registers.r1 = 10000;
+        },
+        "a18":function(mach){
+            mach.registers.r1 = 25000;
+        },
+        "a19":function(mach){
+            mach.registers.r1 = 50000;
+        },
+        "a20":function(mach){
+            mach.registers.r1 = 100000;
+        },
+        "a21":function(mach){
+            mach.registers.r1 = 1000000;
         }
     };
     function trigomatic(){

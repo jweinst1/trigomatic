@@ -9,6 +9,6 @@ var vm = require("./src/VirtMachine.js");
 //reads string from file, and executes the code
 fs.readFile(userArgs[0], 'utf-8', function (err, data) {
     if (err) throw err;
-    var mach = new vm.triogmatic();
+    var mach = new vm.trigomatic();
     console.log(mach.runcode(data));
 });

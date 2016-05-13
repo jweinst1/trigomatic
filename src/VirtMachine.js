@@ -35,6 +35,22 @@ var trigomatic = (function(){
                     return "ERROR"
                 }
             }
+            //allows loading of custom string values into registers
+            else if(/^\$[1-3].+/.test(instructions[this.index])){
+                switch(instructions[this.index][1]){
+                    case "1":
+                        this.registers.r1 = instructions[this.index].slice(2, instructions[this.index].length);
+                        break;
+                    case "2":
+                        this.registers.r2 = instructions[this.index].slice(2, instructions[this.index].length);
+                        break;
+                    case "3":
+                        this.registers.r2 = instructions[this.index].slice(2, instructions[this.index].length);
+                        break;
+                    default:
+                        this.registers.r1 = instructions[this.index].slice(2, instructions[this.index].length);
+                }
+            }
             else {
                 return "ERROR"
             }

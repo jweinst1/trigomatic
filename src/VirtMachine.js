@@ -76,6 +76,140 @@ var trigomatic = (function(){
         },
         "a21":function(mach){
             mach.registers.r1 = 1000000;
+        },
+        //load integers to register 2
+        "a22":function(mach){
+            mach.registers.r2 = 0;
+        },
+        "a23":function(mach){
+            mach.registers.r2 = 1;
+        },
+        "a24":function(mach){
+            mach.registers.r2 = 2;
+        },
+        "a25":function(mach){
+            mach.registers.r2 = 3;
+        },
+        "a26":function(mach){
+            mach.registers.r2 = 4;
+        },
+        "a27":function(mach){
+            mach.registers.r2 = 5;
+        },
+        "a28":function(mach){
+            mach.registers.r2 = 6;
+        },
+        "a29":function(mach){
+            mach.registers.r2 = 10;
+        },
+        "a30":function(mach){
+            mach.registers.r2 = 20;
+        },
+        "a31":function(mach){
+            mach.registers.r2 = 25;
+        },
+        "a32":function(mach){
+            mach.registers.r2 = 50;
+        },
+        "a33":function(mach){
+            mach.registers.r2 = 100;
+        },
+        "a34":function(mach){
+            mach.registers.r2 = 250;
+        },
+        "a35":function(mach){
+            mach.registers.r2 = 500;
+        },
+        "a36":function(mach){
+            mach.registers.r2 = 1000;
+        },
+        "a37":function(mach){
+            mach.registers.r2 = 2000;
+        },
+        "a38":function(mach){
+            mach.registers.r2 = 5000;
+        },
+        "a39":function(mach){
+            mach.registers.r2 = 10000;
+        },
+        "a40":function(mach){
+            mach.registers.r2 = 25000;
+        },
+        "a41":function(mach){
+            mach.registers.r2 = 50000;
+        },
+        "a42":function(mach){
+            mach.registers.r2 = 100000;
+        },
+        "a43":function(mach){
+            mach.registers.r2 = 1000000;
+        },
+        //load integers to register 3
+        "a44":function(mach){
+            mach.registers.r3 = 0;
+        },
+        "a45":function(mach){
+            mach.registers.r3 = 1;
+        },
+        "a46":function(mach){
+            mach.registers.r3 = 2;
+        },
+        "a47":function(mach){
+            mach.registers.r3 = 3;
+        },
+        "a48":function(mach){
+            mach.registers.r3 = 4;
+        },
+        "a49":function(mach){
+            mach.registers.r3 = 5;
+        },
+        "a50":function(mach){
+            mach.registers.r3 = 6;
+        },
+        "a51":function(mach){
+            mach.registers.r3 = 10;
+        },
+        "a52":function(mach){
+            mach.registers.r3 = 20;
+        },
+        "a53":function(mach){
+            mach.registers.r3 = 25;
+        },
+        "a54":function(mach){
+            mach.registers.r3 = 50;
+        },
+        "a55":function(mach){
+            mach.registers.r3 = 100;
+        },
+        "a56":function(mach){
+            mach.registers.r3 = 250;
+        },
+        "a57":function(mach){
+            mach.registers.r3 = 500;
+        },
+        "a58":function(mach){
+            mach.registers.r3 = 1000;
+        },
+        "a59":function(mach){
+            mach.registers.r3 = 2000;
+        },
+        "a60":function(mach){
+            mach.registers.r3 = 5000;
+        },
+        "a61":function(mach){
+            mach.registers.r3 = 10000;
+        },
+        "a62":function(mach){
+            mach.registers.r3 = 25000;
+        },
+        "a63":function(mach){
+            mach.registers.r3 = 50000;
+        },
+        "a64":function(mach){
+            mach.registers.r3 = 100000;
+        },
+        "a65":function(mach){
+            mach.registers.r3 = 1000000;
         }
     };
     function trigomatic(){

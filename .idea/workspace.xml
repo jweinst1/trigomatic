@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55fe1815-5025-49d5-89ec-e0eb7e91fc7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InstrucLib/a.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VirtMachine.js" afterPath="$PROJECT_DIR$/src/VirtMachine.js" />
     </list>
     <ignored path="trigomatic.iws" />
@@ -47,8 +46,8 @@
       <file leaf-file-name="VirtMachine.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VirtMachine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37300178">
-              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.7069272">
+              <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -304,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VirtMachine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37300178">
-          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.7069272">
+          <caret line="210" column="12" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
           <folding />
         </state>
       </provider>

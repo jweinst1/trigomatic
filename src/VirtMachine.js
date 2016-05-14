@@ -340,7 +340,70 @@ var trigomatic = (function(){
             if(mach.registers.r3 !== 0) {
                 mach.index += 1;
             }
+        },
+        //jump backing instructions
+        "b02":function(mach){
+            if(mach.registers.r1 === 0) {
+                mach.index -= 1;
+            }
+        },
+        "b03":function(mach){
+            if(mach.registers.r2 === 0) {
+                mach.index -= 1;
+            }
+        },
+        "b04":function(mach){
+            if(mach.registers.r3 === 0) {
+                mach.index -= 1;
+            }
+        },
+        //jump backing if not equal to zero
+        "b05":function(mach){
+            if(mach.registers.r1 !== 0) {
+                mach.index -= 1;
+            }
+        },
+        "b06":function(mach){
+            if(mach.registers.r2 !== 0) {
+                mach.index -= 1;
+            }
+        },
+        "b07":function(mach){
+            if(mach.registers.r3 !== 0) {
+                mach.index -= 1;
+            }
+        },
+        "b08":function(mach){
+            if(mach.registers.r1 === null) {
+                mach.index += 1;
+            }
+        },
+        "b09":function(mach){
+            if(mach.registers.r2 === null) {
+                mach.index += 1;
+            }
+        },
+        "b10":function(mach){
+            if(mach.registers.r3 === null) {
+                mach.index += 1;
+            }
+        },
+        "b11":function(mach){
+            if(mach.registers.r1 !== null) {
+                mach.index += 1;
+            }
+        },
+        "b12":function(mach){
+            if(mach.registers.r2 !== null) {
+                mach.index += 1;
+            }
+        },
+        "b13":function(mach){
+            if(mach.registers.r3 !== null) {
+                mach.index += 1;
+            }
         }
+
     };
     function trigomatic(){
         this.registers = new regobj();

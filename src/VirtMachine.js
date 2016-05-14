@@ -255,6 +255,91 @@ var trigomatic = (function(){
         },
         "a80":function(mach){
             mach.registers.r3 = [];
+        },
+        //adding instructions, storing in third register
+        "a81":function(mach){
+            mach.registers.r1 = mach.registers.r2 + mach.registers.r3;
+        },
+        "a82":function(mach){
+            mach.registers.r2 = mach.registers.r1 + mach.registers.r3;
+        },
+        "a83":function(mach){
+            mach.registers.r3 = mach.registers.r2 + mach.registers.r1;
+        },
+        //subtracting instructions, storing in third register
+        "a84":function(mach){
+            mach.registers.r1 = mach.registers.r2 - mach.registers.r3;
+        },
+        "a85":function(mach){
+            mach.registers.r2 = mach.registers.r1 - mach.registers.r3;
+        },
+        "a86":function(mach){
+            mach.registers.r3 = mach.registers.r2 - mach.registers.r1;
+        },
+        //multiply registers, store in third register
+        "a87":function(mach){
+            mach.registers.r1 = mach.registers.r2 * mach.registers.r3;
+        },
+        "a88":function(mach){
+            mach.registers.r2 = mach.registers.r1 * mach.registers.r3;
+        },
+        "a89":function(mach){
+            mach.registers.r3 = mach.registers.r2 * mach.registers.r1;
+        },
+        //divide registers, store in third register
+        "a90":function(mach){
+            mach.registers.r1 = mach.registers.r2 / mach.registers.r3;
+        },
+        "a91":function(mach){
+            mach.registers.r2 = mach.registers.r1 / mach.registers.r3;
+        },
+        "a92":function(mach){
+            mach.registers.r3 = mach.registers.r2 / mach.registers.r1;
+        },
+        //floor division of registers, store in third
+        "a93":function(mach){
+            mach.registers.r1 = Math.floor(mach.registers.r2 / mach.registers.r3);
+        },
+        "a94":function(mach){
+            mach.registers.r2 = Math.floor(mach.registers.r1 / mach.registers.r3);
+        },
+        "a95":function(mach){
+            mach.registers.r3 = Math.floor(mach.registers.r2 / mach.registers.r1);
+        },
+        //jumps one if register 1 is zero
+        "a96":function(mach){
+            if(mach.registers.r1 === 0) {
+                mach.index += 1;
+            }
+        },
+        //jumps one if register 2 is zero
+        "a97":function(mach){
+            if(mach.registers.r2 === 0) {
+                mach.index += 1;
+            }
+        },
+        //jumps one if register 3 is zero
+        "a98":function(mach){
+            if(mach.registers.r3 === 0) {
+                mach.index += 1;
+            }
+        },
+        "a99":function(mach){
+            if(mach.registers.r1 !== 0) {
+                mach.index += 1;
+            }
+        },
+        //jumps one if register 2 is not zero
+        "b00":function(mach){
+            if(mach.registers.r2 !== 0) {
+                mach.index += 1;
+            }
+        },
+        //jumps one if register 3 is not zero
+        "b01":function(mach){
+            if(mach.registers.r3 !== 0) {
+                mach.index += 1;
+            }
         }
     };
     function trigomatic(){
